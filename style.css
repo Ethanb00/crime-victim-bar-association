@@ -1,0 +1,457 @@
+/*
+Theme Name: Neve Child
+Theme URI: https://themeisle.com/themes/neve/
+Template: neve
+Author: ThemeIsle
+Author URI: https://themeisle.com
+Description: Neve is a super fast, easily customizable, multi-purpose theme. It’s perfect for blogs, small business, startups, agencies, firms, e-commerce shops (WooCommerce storefront) as well as personal portfolio sites and most types of projects. A fully AMP optimized and responsive theme, Neve will load in mere seconds and adapt perfectly on any viewing device. While it is lightweight and has a minimalist design, the theme is highly extendable, it has a highly SEO optimized code, resulting in top rankings in Google search results. Neve works perfectly with Gutenberg and the most popular page builders (Elementor, Brizy, Beaver Builder, Visual Composer, SiteOrigin, Divi). Neve is also WooCommerce ready, responsive, RTL &amp; translation ready. Look no further. Neve is the perfect theme for you!
+Tags: blog,custom-logo,e-commerce,rtl-language-support,post-formats,grid-layout,one-column,two-columns,custom-background,custom-colors,custom-header,custom-menu,featured-image-header,featured-images,flexible-header,full-width-template,sticky-post,theme-options,threaded-comments,translation-ready,accessibility-ready,wide-blocks,block-styles,footer-widgets,portfolio,left-sidebar,right-sidebar
+Version: 2.4.0.1567622546
+Updated: 2019-09-04 14:42:26
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body{
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.lae-portfolio-wrap .lae-portfolio-header {
+    margin-bottom: 0;
+}
+
+.lae-portfolio-wrap .lae-heading {
+    text-align: center;
+    margin: inherit;
+}
+
+.header--row-inner.dark-mode,
+.header--row-inner.dark-mode .sub-menu,
+.header--row-inner.dark-mode .sub-menu li {
+    background-color: #f5f5f5;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-width: 1px;
+    border-bottom-color: #DCDCDC;
+}
+
+h3.entry-title.obfx-grid-title {
+    text-align: center;
+}
+
+ol.tribe-list-widget {
+    list-style: none;
+}
+
+ol.tribe-list-widget li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left-width: 10px;
+    border-left: solid #f36e25;
+}
+
+@media only screen and (max-width: 600px) {
+    iframe#twitter-widget-0 {
+        max-height: 200px;
+    }
+}
+
+h2.elementor-heading-title.elementor-size-default {
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.nv-page-title,
+.elementor-heading-title.elementor-size-xl {
+    margin-top: 10px;
+}
+
+.input-title {
+    clear: both;
+    padding: 22px 0px 0px 0px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .6);
+    font-weight: 300;
+}
+
+
+
+
+/* Styling Checkbox Starts */
+.checkbox-label {
+    display: block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid #FFFFFF;
+}
+
+
+.checkbox-label input:checked~.checkbox-custom {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 2px solid #FFFFFF;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #009BFF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+.checkbox-label input:checked~.checkbox-custom::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #009BFF;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+
+
+/* For Ripple Effect */
+.checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.checkbox-label input:checked~.checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+embed.pdf-embed {
+    height: 700px;
+}
+
+#english-request {
+    display: none;
+}
+
+#spanish-request {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .builder-item.col-3.col-md-3.col-sm-3.hfg-item-left.hfg-item-first {
+        display: none;
+    }
+
+    .builder-item.col-6.col-md-6.col-sm-6.hfg-item-center a {
+        text-decoration: underline;
+    }
+}
+
+.vl {
+    border-left: 1px solid #09a94e;
+    height: 150px;
+    margin: auto 50px auto 0;
+}
+
+#subtitle_text {
+    margin: auto 0;
+    font-weight: 200;
+    font-size: 2em;
+    float: left;
+}
+
+.mp_wrapper {
+    max-width: 789px;
+    margin: 0 auto;
+}
+
+#sftExt-frontend-button {
+    font-size: 1rem;
+    letter-spacing: inherit;
+    border-radius: 0 !important;
+    top: 0 !important;
+    height: 42px !important;
+    right: 0 !important;
+    z-index: 99998 !important;
+}
+
+.mp_wrapper textarea,
+.mp_wrapper select,
+.mp_wrapper input[type=text],
+.mp_wrapper input[type=url],
+.mp_wrapper input[type=email],
+.mp_wrapper input[type=tel],
+.mp_wrapper input[type=number],
+.mp_wrapper input[type=password] {
+    height: auto !important;
+}
+
+.scrolling-section::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scrolling-section::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.scrolling-section::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.scrolling-section::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.ARS-column {
+    margin: 0 auto;
+}
+
+.scrolling-section {
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 30px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    max-width: 800px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: solid;
+    border-color: #055555;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: #000000;
+    transition: 0.3s;
+    font-size: 17px;
+    max-width: 33%;
+    margin: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #007DA3;
+    color: #fff
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.ui-datepicker-header {
+    background-color: #000000;
+    color: #f5f5f5;
+}
+
+select.ui-datepicker-month,
+.ui-datepicker-year {
+    color: #f5f5f5;
+    margin: 5px;
+}
+
+#csa-search {
+    min-height: 800px;
+}
+
+#column_container {
+    width: 959px;
+    margin: 0 auto;
+}
+
+#column1 {
+    width: 400px%;
+    float: left;
+    margin: 5%;
+}
+
+#column2 {
+    width: 450px;
+    float: left;
+    margin: 5%;
+}
+
+#library-tile {
+    min-width: 300px;
+    min-height: 300px;
+    align-content: center;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+.alert {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    color: #c09853;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.alert-heading {
+    color: inherit;
+}
+
+.alert .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    line-height: 18px;
+}
+.alert-success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-info {
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.card {
+    margin-bottom:10px;
+  }
+.content {
+}
+.custom-wrapper{
+    float:left;
+}
+
+.ars-accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  #ars-content{
+    min-height:1000px; 
+    width:100vw;
+  }
+  .section-header{
+    text-align:center; 
+    border-bottom-color: black; 
+    border-bottom-width: 1px; 
+    border-bottom-style: solid;
+  }
+  .h1, h1 {
+    font-size: 2em !important;
+}
+table{
+    margin-top:0;
+    margin-bottom:0;
+}
